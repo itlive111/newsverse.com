@@ -1,0 +1,36 @@
+{
+  "name": "newsverse",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:backup": "node scripts/backup.js",
+    "admin:create": "tsx scripts/create-admin.ts",
+    "ingest:once": "tsx scripts/ingest-once.ts",
+    "sources:expand": "tsx scripts/sources-expand.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.2",
+    "fast-xml-parser": "^5.11.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5",
+    "zod": "^4.6.7"
+  }
+}

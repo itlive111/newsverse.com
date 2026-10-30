@@ -1,0 +1,11 @@
+node_modules
+.next
+data
+.env
+.env.*
+!.env.example
+*.log
+screenshots
+docs/*.zip
+newsverse-source.zip
+freebuff-sites-build
